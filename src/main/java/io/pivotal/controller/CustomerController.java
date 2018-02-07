@@ -112,7 +112,7 @@ public class CustomerController {
 	        } else if (c1.getTimestamp().after(c2.getTimestamp())) {
 	            return 1;
 	        } else {
-	            return 0;
+	            return c1.getIndex() - c2.getIndex();
 	        }   
 		}
 	};
